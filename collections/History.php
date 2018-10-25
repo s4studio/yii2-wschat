@@ -1,14 +1,14 @@
 <?php
-namespace svbackend\wschat\collections;
+namespace s4studio\wschat\collections;
 
 use Yii;
 use yii\mongodb\Exception;
 use yii\mongodb\Query;
-use svbackend\wschat\components\AbstractStorage;
+use s4studio\wschat\components\AbstractStorage;
 
 /**
  * Class History
- * @package svbackend\wschat\collections
+ * @package s4studio\wschat\collections
  * @property \MongoId $_id
  * @property string $chat_id
  * @property string $chat_title

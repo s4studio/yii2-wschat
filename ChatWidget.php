@@ -1,5 +1,5 @@
 <?php
-namespace svbackend\wschat;
+namespace s4studio\wschat;
 
 use Yii;
 use yii\base\Widget;
@@ -8,7 +8,7 @@ use yii\helpers\Json;
 
 /**
  * Class ChatWidget
- * @package svbackend\wschat
+ * @package s4studio\wschat
  */
 class ChatWidget extends Widget
 {
@@ -26,7 +26,7 @@ class ChatWidget extends Widget
         'title' => 'All'
     ];
     /** @var string path to avatars folder */
-    public $imgPath = '@vendor/svbackend/yii2-wschat/assets/img';
+    public $imgPath = '@vendor/s4studio/yii2-wschat/assets/img';
 
     /**
      * @var boolean is user available to add nwe rooms

@@ -1,7 +1,7 @@
 <?php
 namespace tests\codeception\unit;
 
-use svbackend\wschat\components\AbstractStorage;
+use s4studio\wschat\components\AbstractStorage;
 use yii\codeception\TestCase;
 
 /**
@@ -22,7 +22,7 @@ class PgsqlStorageTest extends TestCase
     ];
 
     /**
-     * @covers \svbackend\wschat\components\DbStorage::storeMessage
+     * @covers \s4studio\wschat\components\DbStorage::storeMessage
      */
     public function testStoreMessage()
     {
@@ -31,7 +31,7 @@ class PgsqlStorageTest extends TestCase
 
     /**
      * @depends testStoreMessage
-     * @covers \svbackend\wschat\components\DbStorage::getHistory
+     * @covers \s4studio\wschat\components\DbStorage::getHistory
      */
     public function testGetHistory()
     {

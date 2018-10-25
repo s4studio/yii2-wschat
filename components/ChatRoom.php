@@ -1,16 +1,16 @@
 <?php
-namespace svbackend\wschat\components;
+namespace s4studio\wschat\components;
 
 /**
  * Class ChatRoom
- * @package \svbackend\wschat\components
+ * @package \s4studio\wschat\components
  */
 class ChatRoom
 {
     public $title;
     /** @var string */
     private $uid;
-    /** @var \svbackend\wschat\components\User[] */
+    /** @var \s4studio\wschat\components\User[] */
     private $users = [];
 
     /**
@@ -40,7 +40,7 @@ class ChatRoom
      * Get chat room user list
      *
      * @access public
-     * @return \svbackend\wschat\components\User[]
+     * @return \s4studio\wschat\components\User[]
      */
     public function getUsers()
     {
@@ -51,7 +51,7 @@ class ChatRoom
      * Add user to chat room
      *
      * @access public
-     * @param \svbackend\wschat\components\User $user
+     * @param \s4studio\wschat\components\User $user
      * @return void
      */
     public function addUser(User $user)
@@ -63,7 +63,7 @@ class ChatRoom
      * Remove user from chat room
      *
      * @access public
-     * @param \svbackend\wschat\components\User $user
+     * @param \s4studio\wschat\components\User $user
      * @return void
      */
     public function removeUser(User $user)

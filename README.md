@@ -1,7 +1,8 @@
 Yii2 Web Socket Private Chat
 ===============
 
-Online chat based on web sockets and ratchet php. Forked: github.com/joni-jones/yii2-wschat (public chat, with rooms)
+Online chat based on github.com/svbackend/wschat and web sockets and ratchet php. Forked: github.com/joni-jones/yii2-wschat (public chat, with rooms)
+
 
 Installation
 ------------
@@ -11,13 +12,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist svbackend/yii2-wschat
+php composer.phar require --prefer-dist s4studio/yii2-wschat
 ```
 
 or add
 
 ```
-"svbackend/yii2-wschat": "*"
+"s4studio/yii2-wschat": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -78,8 +79,8 @@ extension to store messages history and you need just specify connection in `con
         ```php
         namespace app\commands;
 
-        use svbackend\wschat\components\Chat;
-        use svbackend\wschat\components\ChatManager;
+        use s4studio\wschat\components\Chat;
+        use s4studio\wschat\components\ChatManager;
         use Ratchet\Server\IoServer;
         use Ratchet\Http\HttpServer;
         use Ratchet\WebSocket\WsServer;

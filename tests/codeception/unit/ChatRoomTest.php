@@ -2,8 +2,8 @@
 namespace tests\codeception\unit;
 
 use yii\codeception\TestCase;
-use svbackend\wschat\components\User;
-use svbackend\wschat\components\ChatRoom;
+use s4studio\wschat\components\User;
+use s4studio\wschat\components\ChatRoom;
 
 
 class ChatRoomTest extends TestCase

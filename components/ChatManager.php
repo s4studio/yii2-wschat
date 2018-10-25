@@ -1,16 +1,16 @@
 <?php
-namespace svbackend\wschat\components;
+namespace s4studio\wschat\components;
 
 use Yii;
-use svbackend\wschat\collections\History;
+use s4studio\wschat\collections\History;
 
 /**
  * Class ChatManager
- * @package \svbackend\wschat\components
+ * @package \s4studio\wschat\components
  */
 class ChatManager
 {
-    /** @var \svbackend\wschat\components\User[] */
+    /** @var \s4studio\wschat\components\User[] */
     private $users = [];
     /** @var string a namespace of class to get user instance */
     public $userClassName = null;
@@ -59,7 +59,7 @@ class ChatManager
      *
      * @access public
      * @param $rid
-     * @return \svbackend\wschat\components\ChatRoom|null
+     * @return \s4studio\wschat\components\ChatRoom|null
      */
     public function getUserChat($rid)
     {
@@ -74,7 +74,7 @@ class ChatManager
      * @access public
      * @param $chatId
      * @param $rid
-     * @return \svbackend\wschat\components\ChatRoom|null
+     * @return \s4studio\wschat\components\ChatRoom|null
      */
     public function findChat($chatId, $rid)
     {
@@ -136,8 +136,8 @@ class ChatManager
      * Store chat message
      *
      * @access public
-     * @param \svbackend\wschat\components\User $user
-     * @param \svbackend\wschat\components\ChatRoom $chat
+     * @param \s4studio\wschat\components\User $user
+     * @param \s4studio\wschat\components\ChatRoom $chat
      * @param string $message
      */
     public function storeMessage(User $user, ChatRoom $chat, $message)

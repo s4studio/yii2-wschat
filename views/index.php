@@ -1,5 +1,5 @@
 <?php
-use svbackend\wschat\ChatAsset;
+use s4studio\wschat\ChatAsset;
 
 /** \yii\web\View $this */
 ChatAsset::register($this);

@@ -1,14 +1,14 @@
 <?php
-namespace svbackend\wschat\components;
+namespace s4studio\wschat\components;
 
 use Yii;
-use svbackend\wschat\collections\History;
+use s4studio\wschat\collections\History;
 
 /**
  * Class AbstractStorage
  *
  * Base class to create concrete implementer of message storing
- * @package svbackend\wschat\components
+ * @package s4studio\wschat\components
  */
 abstract class AbstractStorage
 {
@@ -18,7 +18,7 @@ abstract class AbstractStorage
      * @access public
      * @static
      * @param string $storage default null
-     * @return \svbackend\wschat\components\AbstractStorage
+     * @return \s4studio\wschat\components\AbstractStorage
      */
     public static function factory($storage = null)
     {

@@ -3,13 +3,13 @@
 namespace tests\codeception\unit;
 
 use yii\codeception\TestCase;
-use svbackend\wschat\components\ChatManager;
+use s4studio\wschat\components\ChatManager;
 
 class ChatTest extends TestCase
 {
     /** @var \UnitTester */
     protected $tester;
-    /** @var \svbackend\wschat\components\ChatManager */
+    /** @var \s4studio\wschat\components\ChatManager */
     protected $cm;
     protected $rid = 1;
     protected $userId = 1;
@@ -29,8 +29,8 @@ class ChatTest extends TestCase
     {
         $this->cm->addUser($this->rid, $this->userId);
         $user = $this->cm->getUserByRid($this->rid);
-        $this->assertInstanceOf('svbackend\wschat\components\User', $user,
-            'User should be instance of svbackend\wschat\components\User');
+        $this->assertInstanceOf('s4studio\wschat\components\User', $user,
+            'User should be instance of s4studio\wschat\components\User');
         $this->assertEquals($this->userId, $user->getId(), 'User id should match');
     }
 
@@ -41,8 +41,8 @@ class ChatTest extends TestCase
     {
         $this->cm->addUser($this->rid, $this->userId);
         $chat = $this->cm->findChat($this->chatId, $this->rid);
-        $this->assertInstanceOf('svbackend\wschat\components\ChatRoom', $chat,
-            'Chat should be instance of svbackend\wschat\ChatRoom');
+        $this->assertInstanceOf('s4studio\wschat\components\ChatRoom', $chat,
+            'Chat should be instance of s4studio\wschat\ChatRoom');
         $this->assertEquals($this->chatId, $chat->getUid(), 'Chat id should match');
         $users = $chat->getUsers();
         $this->assertEquals(1, sizeof($users), 'We added only one user');

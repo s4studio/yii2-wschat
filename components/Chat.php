@@ -1,5 +1,5 @@
 <?php
-namespace svbackend\wschat\components;
+namespace s4studio\wschat\components;
 
 use Yii;
 use yii\helpers\Json;
@@ -8,13 +8,13 @@ use Ratchet\MessageComponentInterface;
 
 /**
  * Class Chat
- * @package \svbackend\wschat\components
+ * @package \s4studio\wschat\components
  */
 class Chat implements MessageComponentInterface
 {
     /** @var ConnectionInterface[] */
     private $clients = [];
-    /** @var \svbackend\wschat\components\ChatManager */
+    /** @var \s4studio\wschat\components\ChatManager */
     private $cm = null;
 
     /**
@@ -25,7 +25,7 @@ class Chat implements MessageComponentInterface
     ];
 
     /**
-     * @param \svbackend\wschat\components\ChatManager $cm
+     * @param \s4studio\wschat\components\ChatManager $cm
      */
     public function __construct(ChatManager $cm)
     {

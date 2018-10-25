@@ -3,8 +3,8 @@ namespace tests\codeception\unit;
 
 use Yii;
 use yii\codeception\TestCase;
-use svbackend\wschat\components\AbstractStorage;
-use svbackend\wschat\collections\History;
+use s4studio\wschat\components\AbstractStorage;
+use s4studio\wschat\collections\History;
 
 class MongoStorageTest extends TestCase
 {
@@ -25,7 +25,7 @@ class MongoStorageTest extends TestCase
     }
 
     /**
-     * @covers \svbackend\wschat\collections\History::storeMessage
+     * @covers \s4studio\wschat\collections\History::storeMessage
      */
     public function testStoreMessage()
     {
@@ -34,7 +34,7 @@ class MongoStorageTest extends TestCase
 
     /**
      * @depends testStoreMessage
-     * @covers \svbackend\wschat\collections\History::getHistory
+     * @covers \s4studio\wschat\collections\History::getHistory
      */
     public function testGetHistory()
     {

@@ -1,12 +1,12 @@
 <?php
 
-namespace svbackend\wschat;
+namespace s4studio\wschat;
 
 use yii\web\AssetBundle;
 
 /**
  * Class ChatLibAsset
- * @package svbackend\wschat
+ * @package s4studio\wschat
  */
 class ChatLibAsset extends AssetBundle
 {
