@@ -12,6 +12,16 @@
             'Copied to clipboard': 'Скопировано в буфер обмена',
             'Connection error. Try to reload page': 'Ошибка соединения. Попробуйте обновить страницу',
             'Something wrong. Connection will be closed': 'Произошла ошибка. Соединение будет закрыто'
+        },
+        'pl': {
+            'New message from': 'Nowa wiadomość od',
+            'Connect to chat': 'Dołącz do czata',
+            'Left this chat': 'Opuść ten czat',
+            'Send message': 'Wyślij wiadomość',
+            'Current room is not available': 'Pokój niedostępny',
+            'Copied to clipboard': 'Skopiowano do schowka',
+            'Connection error. Try to reload page': 'Błąd połączenia. Spróbuj przeładować stronę',
+            'Something wrong. Connection will be closed': 'Coś poszło źle. Połączenie zostanie zamknięte'
         }
     };
     Helper.t = function(message) {

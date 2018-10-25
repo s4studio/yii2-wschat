@@ -50,8 +50,12 @@ Chat.Views.ChatView = Backbone.View.extend({
         for (var key in data) {
             var item = data[key];
             var user = {
-                id: item.user_id, username: item.username, timestamp: item.timestamp,
-                message: item.message, avatar_16: item.avatar_16, avatar_32: item.avatar_32,
+                id: item.user_id,
+                username: item.username,
+                timestamp: item.timestamp,
+                message: item.message,
+                avatar_16: item.avatar_16,
+                avatar_32: item.avatar_32,
                 type: 'info'
             };
             this.renderMessage(new Chat.Models.User(user));

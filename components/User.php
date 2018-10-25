@@ -67,8 +67,8 @@ class User
                  * You can define custom avatars / username there
                  */
                 #$attrs['username'] = $model->getUsername();
-                #$attrs['avatar_16'] = $model->getAvatar();
-                #$attrs['avatar_32'] = $model->getAvatar();
+//                $attrs['avatar_16'] = $model->getAvatar();
+//                $attrs['avatar_32'] = $model->getAvatar();
             } else {
                 $attrs = $props;
             }
