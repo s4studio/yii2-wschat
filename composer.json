@@ -7,13 +7,13 @@
     "stability": "stable",
     "authors": [
         {
-            "name": "Edmund Kawalec"
-        },
-        {
             "name": "Ievgen Sentiabov"
         },
         {
             "name": "Valentin Saik"
+        },
+        {
+            "name": "Edmund Kawalec"
         }
     ],
     "require": {
