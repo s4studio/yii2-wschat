@@ -152,7 +152,9 @@ class Chat implements MessageComponentInterface
         foreach ($users as &$user) {
             $user = [
                 'id' => $user->id ,
-                'username' => $user->username
+                'username' => $user->username,
+                'avatar_16' => $user->avatar_16,
+                'avatar_32' => $user->avatar_32,				
             ];
         }
         //send auth response for joined user
