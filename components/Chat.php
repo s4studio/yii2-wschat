@@ -147,6 +147,14 @@ class Chat implements MessageComponentInterface
                 $conn->send(Json::encode(['type' => 'auth', 'data' => $response]));
             }
         }
+		
+		// temporary method to clear unwanted fields
+        foreach ($users as &$user) {
+            $user = [
+                'id' => $user->id ,
+                'username' => $user->username
+            ];
+        }
         //send auth response for joined user
         $response = [
             'user' => $joinedUser,
