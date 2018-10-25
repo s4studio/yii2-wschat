@@ -1,7 +1,8 @@
 Yii2 Web Socket Private Chat
 ===============
 
-Online chat based on github.com/svbackend/wschat and web sockets and ratchet php. Forked: github.com/joni-jones/yii2-wschat (public chat, with rooms)
+Online chat based on web sockets and ratchet php. 
+Forked: https://github.com/svbackend/yii2-wschat (public chat, with rooms). Removed MongoDB dependency as required one.
 
 
 Installation
