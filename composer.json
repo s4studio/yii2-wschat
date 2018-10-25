@@ -7,6 +7,9 @@
     "stability": "stable",
     "authors": [
         {
+            "name": "Edmund Kawalec"
+        },
+        {
             "name": "Ievgen Sentiabov"
         },
         {
@@ -32,7 +35,7 @@
     },
     "autoload": {
         "psr-4": {
-            "svbackend\\wschat\\": ""
+            "s4studio\\wschat\\": ""
         }
     }
 }
