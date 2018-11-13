@@ -43,9 +43,9 @@ class ChatAsset extends AssetBundle
     {
         $this->sourcePath = __DIR__.'/assets/';
         //set minimized version of js scripts for non debug version
-        if (!YII_DEBUG) {
+        /* if (!YII_DEBUG) {
             $this->js = ['js/chat.min.js?v1'];
-        }
+        }*/
         parent::init();
     }
 }
